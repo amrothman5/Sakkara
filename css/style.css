@@ -1,0 +1,425 @@
+/* =============================Nav Bar start============================================ */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+     padding: 0;
+     margin: 0;
+     text-decoration: none;
+     list-style: none;
+     box-sizing: border-box;
+   }
+   body{
+     font-family: montserrat;
+     /* background: #c0bcb986; */
+   }
+   nav{
+        position: fixed;
+     background: #474747;
+     height: 80px;
+     width: 100%;
+     z-index: 2;
+   }
+   label.logo-text{
+     color: rgb(245, 91, 30);
+     font-size: 35px;
+     line-height: 80px;
+     padding: 0 100px;
+     font-weight: bold;
+   }
+  
+   nav ul{
+     float: right;
+     margin-right: 20px;
+   }
+   nav ul li{
+     display: inline-block;
+     line-height: 80px;
+     margin: 0 5px;
+   }
+   nav ul li a{
+     color: rgb(245, 91, 30);
+     font-size: 17px;
+     padding: 7px 13px;
+     border-radius: 3px;
+     text-transform: uppercase;
+   }
+   /* a .active,a:hover{
+     background: #1b9bff;
+     transition: .5s;
+   } */
+   .checkbtn{
+     font-size: 30px;
+     color: white;
+     float: right;
+     line-height: 80px;
+     margin-right: 40px;
+     cursor: pointer;
+     display: none;
+   }
+   #check{
+     display: none;
+   }
+   @media (max-width: 952px){
+     label.logo{
+       font-size: 30px;
+       padding-left: 50px;
+     }
+     nav ul li a{
+       font-size: 16px;
+     }
+   }
+   @media (max-width: 858px){
+     .checkbtn{
+       display: block;
+     }
+     ul{
+       position: fixed;
+       width: 100%;
+       height: 100vh;
+       background: #2c3e50;
+       top: 80px;
+       left: -100%;
+       text-align: center;
+       transition: all .5s;
+     }
+     nav ul li{
+       display: block;
+       margin: 50px 0;
+       line-height: 30px;
+     }
+     nav ul li a{
+       font-size: 20px;
+     }
+     /* a:hover,a.active{
+       background: none;
+       color: #0082e6;
+     } */
+     #check:checked ~ ul{
+       left: 0;
+     }
+   }
+/* ===========start Nav button===================== */
+
+   .btns a > span{
+     position: absolute;
+     background: #fff;
+     transform: translate(-50%, -50%);
+     border-radius: 50%;
+     pointer-events: none;
+     animation: ripples 0.6s linear infinite;
+   }
+   @keyframes ripples {
+     0% {
+       width: 0px;
+       height: 0px;
+       opacity: 0.5;
+     }
+     100% {
+       width: 500px;
+       height: 500px;
+       opacity: 0;
+     }
+   }
+   /* ==================animation Nav=============================== */
+   .link1{
+     position: relative;
+     /* display: none; */
+     /* color: #2196f3; */
+     border-radius: 5px;
+     /* text-transform: uppercase; */
+     letter-spacing: 1px;
+     text-decoration: none;
+     font-weight: bold;
+     font-size: 15px;
+     overflow: hidden;
+     transition: 2s;
+   }
+   
+   .link1:hover{
+     color: #37393a;
+     background:#f7bc50;
+     box-shadow: 0 0 10px #f5ab3d,0 0 40px #f08f10,0 0 80px #f3aa21 ;
+     transition-delay: 0s ;
+     }
+     .link1 span{
+       position: absolute;
+       display: block;
+     }
+     .link1 span:nth-child(1){
+       top:0;
+       left:-100%;
+       width: 100%;
+       height: 2px;
+       background: linear-gradient(90deg,transparent,#f1662f);
+     }
+     .link1:hover span:nth-child(1){
+       left:100%;
+       transition: 1s;
+     }
+     .link1 span:nth-child(2){
+       top:-100%;
+       right:0px;
+       width: 2px;
+       height: 100%;
+       background: linear-gradient(180deg,transparent,#f1662f);
+     }
+     .link1:hover span:nth-child(2){
+       top:100%;
+       transition: 1s;
+       transition-delay: 0.25s;
+     }
+     .link1 span:nth-child(3){
+       bottom:0;
+       right:-100%;
+       width: 100%;
+       height: 2px;
+       background: linear-gradient(270deg,transparent,#f1662f);
+     }
+     .link1:hover span:nth-child(3){
+       right:100%;
+       transition: 1s;
+       transition-delay: 0.5s;
+     }
+     .link1 span:nth-child(4)
+     {
+       bottom:-100%;
+       left:0px;
+       width: 2px;
+       height: 100%;
+       background: linear-gradient(360deg,transparent,#f1662f);
+     }
+     .link1:hover span:nth-child(4){
+       bottom:100%;
+       transition: 1s;
+       transition-delay: 0.75s;
+     }
+   /* =============End of Nav ================================ */
+   /* ==================the beggining of carousel css ============================================== */
+   .carousel1{
+        width:100%;
+        height: 100vh;
+        position: relative;
+   }
+   .carousel-caption{
+        top:80px;
+        width: 300px;
+        height: 90vh;
+        background: rgba(0, 0, 0, 0.541);
+   }
+   .h3-responsive{
+        margin-top: 150px;
+        padding-top:50px;
+        font-size:35px;
+        font-weight:bold;
+        color: rgb(245, 91, 30);
+   }
+    p {
+      margin-top: 20px;
+     font-size:20px;
+   }
+   .social{
+     margin-left: 10px;
+   }
+   /* ==========begining fixed========================================= */
+   
+
+  /* ==========================defination company secand Div ============================ */
+  .defination{
+    width:100%;
+    height:450px;
+    display: flex; 
+    margin: 150px 0px 100px  0px;
+    background: greenyellow;
+  }
+  .defination_img{
+  
+    width: 80%;
+    margin: 50px 50px 50px 50px;
+    border-radius:10px;
+  }
+
+  .defination_text{
+    text-align: justify;
+    margin-top: 50px;
+    margin-left:100px;
+    line-height: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(44, 43, 43);
+  }
+  .defination_text h3{
+    font-weight: bold;
+    color: rgb(245, 91, 30);
+  }
+  .three-picture{
+    display: flex;
+    flex-direction: row;
+    margin-top: 150px;
+    margin-bottom:150px;
+    width: 100%;
+    height: 350px;
+  }
+  .three-picture1{
+    overflow: hidden;
+    height: 300px;
+    /* border-radius: 10px; */
+
+  }
+   .img{
+    position: relative;
+     width: 110%;
+     height: 100%;
+   }
+   .mask1{
+     position: absolute;
+     width:100%;
+     height: 100%;
+     background:rgba(0, 0, 0, 0.466);
+     z-index: 5;
+     opacity: 0;
+   }
+   .mask1:hover {
+    opacity: 100;
+   }
+   /* ========================fixed position 2============================ */
+   .fixed_posi_1{
+    width:100%;
+    height:500px;
+    background: fixed;
+    top:800px;
+    background-image: url("../img/6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 5;
+ }
+   /* ========================fixed position 2============================ */
+   .fixed_posi2{
+      width:100%;
+      height:500px;
+      background: fixed;
+      top:800px;
+      background-image: url("../img/10.jpg");
+      z-index: 5;
+   }
+    /* ========================fixed position 2============================ */
+    .mask2{
+      position: absolute;
+      width:100%;
+      height:400px;
+     background:rgba(0, 0, 0, 0.753);
+     
+    }
+    .mask2_1{
+      width:100%;
+      height:100%;
+      /* margin-right: 100px; */
+      z-index: 5;
+     display: flex;
+     flex-direction: row;
+    }
+
+    .fixed_posi_3{
+      width:100%;
+      height:400px;
+      background: fixed;
+      top:800px;
+      background-image: url("../img/9.jpg");
+      z-index: 2;
+   }
+      /* ================== card css ====================================================================== */
+      ::selection{
+        color: #fff;
+        background: #1cc7d0;
+      }
+      .wrapper{
+        height: 350px;
+        width: 320px;
+        position: relative;
+        transform-style: preserve-3d;
+       perspective: 1000px;
+       margin-left:100px;
+      }
+      .wrapper .card{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        padding: 5px;
+        background: #fff;
+        border-radius: 10px;
+        transform: translateY(0deg);
+        transform-style: preserve-3d;
+        backface-visibility: hidden;
+        box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+        transition: transform 0.7s cubic-bezier(0.4,0.2,0.2,1);
+      }
+      .wrapper:hover > .front-face{
+        transform: rotateY(-180deg);
+      }
+      .wrapper .card img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+      .wrapper .back-face{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        transform: rotateY(180deg);
+      }
+      .wrapper:hover > .back-face{
+        transform: rotateY(0deg);
+        background: greenyellow;
+
+      }
+      .wrapper .back-face img{
+        height: 150px;
+        width: 150px;
+        padding: 5px;
+        border-radius: 50%;
+        background: linear-gradient(375deg, #1cc7d0, #2ede98);
+      }
+      .wrapper .back-face .info{
+        text-align: center;
+      }
+      .back-face .info .title{
+        font-size: 23px;
+        font-weight: 600;
+
+      }
+      .back-face ul{
+        display: flex;
+      }
+      .back-face ul a{
+        display: block;
+        height: 40px;
+        width: 40px;
+        color: #fff;
+        text-align: center;
+        margin: 0 5px;
+        line-height: 38px;
+        border: 2px solid transparent;
+        border-radius: 50%;
+        background: linear-gradient(375deg, #1cc7d0, #2ede98);
+        transition: all 0.5s ease;
+      }
+      .back-face ul a:hover{
+        color: #1cc7d0;
+        border-color: #1cc7d0;
+        background: linear-gradient(375deg, transparent, transparent);
+      }
+      /* ===============footer */
+      .footer3{
+        padding-left: 50px;
+        z-index: 4;
+        height: 100%;
+        color: white;
+
+      }
+      .footer_secand{
+        margin-top: 50px;
+        color: white;
+      }
+      .text{
+        font-size: 16px;
+      }
