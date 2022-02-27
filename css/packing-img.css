@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+      overflow:hidden;
+  }
+ .swiper-pagination{
+     overflow: hidden;
+ }
+  .swiper-container {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 300px;
+
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    background-color: black;
+    -webkit-box-reflect:  below 1px linear-gradient(transparent,transparent,#0006);
+  }
+ 

@@ -482,3 +482,123 @@
       .text{
         font-size: 16px;
       }
+
+      .packing{
+        position: relative;
+        text-align: center;
+        top: 150px;
+        font-size:80px;
+        font-family: 'Monoton', cursive;  
+        color: #47474783;
+      }
+      .line{
+        position: relative;
+        top: 200px;
+        width: 100px;
+        margin: auto;
+        border-top:3px solid chocolate;
+      }
+      .packing_frist{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+       margin-bottom: 250px;
+       top: 250px;
+
+      }
+      .packing_frist2{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+       margin-bottom: 350px;
+       top: 250px;
+
+      }
+      .packing_img{
+        width: 400px;
+        height: 450px;
+        position: relative;
+        left: 150px;
+      }
+      .packing_text{
+      margin-left: 100px;
+      text-align: justify;
+      line-height: 35px;
+      font-family: 'Zen Antique', serif;      /* font-family: 'Zen Antique', serif; */
+      }
+      .packing_text1{
+        margin-left: 200px;
+        text-align: justify;
+        line-height: 35px;
+        font-family: 'Zen Antique', serif;    
+        }
+      .packing-icon{
+        color: chocolate;
+      }
+        .packing_text  h1{
+        text-align: center;
+        font-family: 'Zen Antique', serif;
+      }
+      .packing_text  a{
+        margin:40%;
+      }
+
+
+
+      @media (min-width: 200px) and (max-width: 800px)
+      {
+        /* ===================Footer======================================= */
+        .footer{
+          height: 750px;
+          width: 360px;
+         
+      }
+      .footer1{
+          text-align: start;
+          direction: rtl;
+      }
+      .footer2{
+          padding-left: 0px;
+      }
+  
+      .font1{
+          display:flex;
+          font-size: 30px;
+          flex-direction: row;
+          justify-content: end;
+          padding-bottom: 5px;
+         }
+         .footer-frest-part{
+             /* width: 100%; */
+             padding-top: 30px;
+             font-size: 15px;
+             padding-left: 8px;
+             box-sizing: border-box;
+          }
+          .mask2_1{
+           display: flex;
+           flex-direction: column;
+          }
+        /* ====================contact US small Screen========================== */
+        .form{
+          margin: 0px  0px ;
+      }
+      .input{
+          width: 250px;
+          /* margin-left: 20px; */
+      }
+      .input1{
+          width: 280px;
+          height: 200px;
+      }
+      .map{
+          width: 85%;
+          margin: 100px 0px 100px 20px ;
+      }
+      .sub{
+          margin-top: 10px;
+          margin-left: 100px;
+          box-sizing: border-box;
+
+      }
+      }

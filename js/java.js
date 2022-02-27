@@ -12,3 +12,15 @@ const buttons = document.querySelectorAll("a");
              }, 600); // 1second = 1000ms
            }
          });
+
+
+
+        //  ==========full Screen===========================================
+         document.querySelectorAll(".photoCI").forEach( imageCI =>{
+          imageCI.onclick = ( ) =>{
+             if (imageCI.webkitRequestFullscreen ){
+                imageCI.webkitRequestFullscreen();
+             }
+          }
+          
+          })
