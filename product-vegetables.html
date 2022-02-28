@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/packing-img.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  
+</head>
+<body>
+    <!-- Swiper -->
+  <div class="swiper-container ">
+    <div class="swiper-wrapper ">
+      <div class="swiper-slide" ><img src="./img/vegetables/44c537b0-e504-4d8b-9ac9-4cfda5112b5e.jfif" width="400px" height="400px" alt="" class="photoCI"  ></div>
+      <div class="swiper-slide" ><img src="./img/vegetables/4a06fba4-b0e5-4f15-bff1-3b8fd348859f.jfif" width="400px" height="400px" alt="" class="photoCI" ></div>
+      <div class="swiper-slide" ><img src="./img/vegetables/636f5462-3b1c-4e08-95fb-fa8fa6caa182.jfif" width="400px" height="400px"  alt="" class="photoCI" ></div>
+      <div class="swiper-slide" ><img src="./img/vegetables/9a9cd397-6179-432f-a1ca-aceb5e761d15 (1).jfif"  width="400px" height="400px" alt=""  class="photoCI"  ></div>
+      <div class="swiper-slide" ><img src="./img/vegetables/ac68bb6e-1fb8-44ca-9de0-a9d50e4d3ea1.jfif" width="400px" height="400px" alt="" class="photoCI" ></div>
+      <div class="swiper-slide" ><img src="./img/vegetables/d9b247d2-9d9d-428e-b319-71a6697fb3f8.jfif" width="400px" height="400px" alt=""  class="photoCI" ></div>
+      <div class="swiper-slide" ><img src="./img/vegetables/e3fb74be-c9b9-42e5-a4cb-6d341196abef.jfif" width="400px" height="400px" alt="" class="photoCI" ></div>
+     
+
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 20,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: true,
+      },
+     loop: true,
+     autoplay: {
+          delay: 1000,
+          disableOnInteraction: false,
+        },
+    });
+  </script>
+<script src="js/java.js"></script>
+</body>
+</html>
